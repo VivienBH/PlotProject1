@@ -5,6 +5,9 @@
 library(sqldf)
 library(dplyr)
 
+## Set Local Timezone as en_US.UTF-8
+Sys.setlocale("LC_TIME", "en_US.UTF-8")
+
 ## Check to see if the existing tidy data set exists; if not, make it...
 if (!file.exists('power_consumption.txt')) {
         
